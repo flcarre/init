@@ -1,0 +1,2 @@
+We can use traceroute with different addresses. The first IPv4 is always the same and is the one making the connexion between our local network and the outside world. This is the machine we are looking for: 10.60.1.11 and its name is nat-1. This machine allows our private IP to be able to send and receive requests without having to be allocated a public ip
+
