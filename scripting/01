@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while read line; do
+	LOGIN=$( echo $line | cut -d ':' -f 1 )
+	MYUID=$( echo $line | cut -d ':' -f 3 )
+	MYPATH=$( echo $line | cut -d ':' -f 7 )
+	echo "$LOGIN; $MYUID; $MYPATH"
+done < /etc/passwd

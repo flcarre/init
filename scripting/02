@@ -1,0 +1,4 @@
+#!/bin/sh
+
+killall -u $1
+deluser --remove-home -f $1

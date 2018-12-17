@@ -1,0 +1,12 @@
+We are missing the super user rights to modify the /etc/hosts file.
+As of now it looks like this:
+
+127.0.0.1		localhost
+255.255.255.255	broadcasthost
+::1				localhost
+
+we have to add the new address to this in order to obtain that:
+127.0.0.1		localhost
+255.255.255.255	broadcasthost
+::1				localhost
+46.19.122.85	intra.42.fr

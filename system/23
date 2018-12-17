@@ -1,0 +1,14 @@
+To connect as a new user on the graphical session, one needs to enter the following command:
+
+	su - <username>
+
+To allow this new user connect to ssh, the administrator has to modify the sshd_config file located in /etc/ssh/.
+
+Once the the new username has been added, the ssh service will have to be reloaded using the following command :
+
+	systemctl reload ssh
+
+After these steps, the new user has to make sure his public key located in ~/.ssh/authorized_keys are only writable by him. 
+If it is not the case, the new user will not have the permission to log to ssh.
+
+Finally, the new user can now connect to ssh.
