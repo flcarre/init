@@ -1,6 +1,6 @@
 #!/bin/bash
 #A usefull clean and push script
 make fclean
-git add -a
+git add .
 git commit -m $1
 git push origin $2
